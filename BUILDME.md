@@ -1,31 +1,30 @@
-# An Arduino sandbox for ESP32 Bluetooth BLE
+# ESP32 on PlatformIO, arduino framework
 
-## Boards
+## Deploy and configure
 
-_ESP32 Dev Module_
-
-## Libraries
-
-By default, all the libraries are installed in the `~/Arduino/libraries`
-directory via the
-[Arduino IDE](https://github.com/Tyrn/dotfiles/blob/main/messy-notes/Arduino.md)
-Library Manager, as well as manually.
-
-- _TaskScheduler_ by Anatoli Arkhipenko
-- _LiquidCrystal_I2C_ by Frank de Brabander
-- _LCD_1602_RUS_ALL_ ([fork](https://github.com/Tyrn/LCD_1602_RUS_ALL))
+- Clone
 
 ```
-git clone https://github.com/Tyrn/LCD_1602_RUS_ALL ~/Arduino/libraries/LCD_1602_RUS_ALL
+git clone git@github.com:Tyrn/BleHelloIO.git
 ```
 
-or, if it's all yours
-
 ```
-git clone git@github.com:Tyrn/LCD_1602_RUS_ALL.git ~/Arduino/libraries/LCD_1602_RUS_ALL
+cd BleHelloIO
 ```
 
-- _EasyButton_ by Evert Arias
+- Configure
+
+```
+./lsupdate.sh
+```
+
+## Build
+
+- Build and upload
+
+```
+pio run -t upload
+```
 
 ## Format source
 
