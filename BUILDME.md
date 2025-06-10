@@ -12,7 +12,13 @@ git clone git@github.com:Tyrn/BleHelloIO.git
 cd BleHelloIO
 ```
 
-- Configure
+- Install platform
+
+```
+pio pkg install -p "platformio/espressif32"
+```
+
+- Configure, or reconfigure at will
 
 ```
 ./lsupdate.sh
